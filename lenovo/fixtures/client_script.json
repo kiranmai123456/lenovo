@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "BOM",
+  "enabled": 1,
+  "modified": "2024-05-31 16:34:19.594574",
+  "module": null,
+  "name": "Hide Button in Work Order",
+  "script": "frappe.ui.form.on('BOM', {\n    refresh(frm) {\n        setTimeout(() => {\n            frm.remove_custom_button('Work Order','Create');\n        });\n    }\n});",
+  "view": "Form"
+ }
+]
